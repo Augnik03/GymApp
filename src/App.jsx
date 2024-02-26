@@ -1,17 +1,19 @@
 import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-import './App.css'
+import './index.css'
+import NavBar from './components/NavBar/NavBar.jsx'
+
 
 function App() {
   // const [count, setCount] = useState(0)
-
+  const[theme,setTheme]= useState('light')
   return (
-   <>
-   <div className='flex justify-center'>
-    <h1 className='text-red-500 text-5xl'>Nice to meet you</h1>
-   </div>
-   </>
+    <div className={`container ${theme}`}>
+      <NavBar theme={theme} setTheme={setTheme}/> 
+    </div>
+    
+   
   )
 }
 

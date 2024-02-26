@@ -1,0 +1,112 @@
+/*--- navbar container ---*/
+.navBar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px 7%;
+    color: #000;
+    transition: 0.5s;
+}
+.navBar .logo{
+    width: 70px;
+    height: auto;
+    margin: 10px 20px;
+    border: 2px solid rgba(0, 0, 0, 0.308);
+    border-radius: 50%;
+    
+}
+
+/*--- list ---*/
+ul{
+    flex: 1;
+    text-align : center;
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    margin : 10px 20px;
+    
+    border-radius: 50px;
+    cursor: pointer;
+}
+ul li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.79);
+    border-radius: 50px;
+    font-size: 18px;
+}
+ul li a:hover{
+    color: #fff;
+    box-shadow: 2px 2px 2px rgba(87, 81, 81, 0.404);
+    background: black;
+    padding: 10px;
+}
+ul li a:active{
+    text-shadow: none;
+}
+
+/*--- search ---*/
+.search{
+    display: flex;
+    background-color: #242424;
+    border-radius: 50px;
+    padding: 6px 16px;
+    align-items: center;
+}
+
+.search input{
+    background: transparent;
+    outline: 0;
+    border: 0;
+    font-size: 18px;
+    padding: 6px;
+    color: #fff;
+    max-width: 200px;
+}
+
+.search input::placeholder{
+    color: #fff;
+    
+}
+.search img{
+    width: 20px;
+    cursor: pointer;
+}
+.search img:hover{
+    width: 25px;
+    margin: -2.5px;
+}
+.toggle-icon{
+    width: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.dark .navBar{
+    background: #000;
+    color: #fff;
+}
+
+.dark .search {
+    background: #fff;
+}
+
+.dark .search input{
+    color: #222;
+}
+
+.dark .search input::placeholder{
+    color: #000;
+}
+.dark ul li a:hover{
+    color: #000;
+    box-shadow: 2px 2px 2px rgba(87, 81, 81, 0.404);
+    background: #fff;
+    padding: 10px;
+}
+
+.dark ul li a {
+    color: #fff;
+}
