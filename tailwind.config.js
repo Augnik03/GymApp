@@ -1,11 +1,24 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
+  mode: 'jit',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        neonGreen:'#d7ff8a'
+      },
+      backgroundImage:{
+        "gymImg" : "url('./src/assets/gym.jpg')"
+      },
+      screens: {
+        'max' : {'max': '870px'},
+        'min1' : {'min': '870px'}
+      }
+    },
   },
   plugins: ["prettier-plugin-tailwindcss"],
 }
