@@ -13,17 +13,19 @@ function NavBar() {
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
-
+    
     return (
-        <div className='h-screen w-screen bg-cover bg-gymImg bg-no-repeat'>
-            <nav className='min1:flex min1:justify-around min1:items-center backdrop-blur-sm sticky top-0 '>
+        <div className='sticky top-0'>
+            <nav className='min1:flex min1:justify-around min1:items-center backdrop-blur-md '>
 
 
 
                 <div className='max:flex max:justify-between max:items-center '>
-                    <a href="#">
-                        <img src={logo} alt="logo" className=' w-28 mx-6 my-4' />
+
+                    <a href="#" className=' rounded-full'>
+                        <img src={logo} alt="logo" className=' w-28 mx-6 my-4 rounded-full p-2' />
                     </a>
+
                     <div className="px-4 cursor-pointer max:inline hidden text-neonGreen">
 
                         <button onClick={toggleMenu}>
@@ -38,21 +40,21 @@ function NavBar() {
                     </div>
                 </div>
 
+                
 
-
-                <div className=' max:text-center min1:flex min1:justify-center'>
+                <div className=' max:text-center min1:flex flex-grow min1:justify-center'>
                     <ul className={`min1:border-2 py-2 px-3 font-bold rounded-full uppercase mx-3 text-white border-gray-500 border-opacity-40 text-sm min1:flex ${isOpen ? 'max:inline-block' : 'max:hidden'} max:text-center max:backdrop-blur-sm max:rounded-none `}>
                         <li className='px-5 py-2 rounded-full hover:bg-neonGreen 
-                 hover:text-black '>
+                 hover:text-black hover:transition hover:ease-in-out hover:duration-500'>
                             <a href="#">Home</a>
                         </li>
-                        <li className='px-5 py-2 rounded-full hover:bg-neonGreen hover:text-black '>
+                        <li className='px-5 py-2 rounded-full hover:bg-neonGreen hover:text-black hover:transition hover:ease-in-out hover:duration-500'>
                             <a href="#">workout</a>
                         </li>
-                        <li className='px-5 py-2 rounded-full hover:bg-neonGreen hover:text-black '>
+                        <li className='px-5 py-2 rounded-full hover:bg-neonGreen hover:text-black hover:transition hover:ease-in-out hover:duration-500'>
                             <a href="#">product</a>
                         </li>
-                        <li className='px-5 py-2 rounded-full hover:bg-neonGreen hover:text-black '>
+                        <li className='px-5 py-2 rounded-full hover:bg-neonGreen hover:text-black hover:transition hover:ease-in-out hover:duration-500'>
                             <a href="#">resource</a>
                         </li>
                     </ul>
@@ -61,7 +63,7 @@ function NavBar() {
 
 
                     <div className='flex justify-center items-center max:pb-4'>
-                        <div className={` px-3 mr-3 rounded-full text-neonGreen max:border-gray-400 min1:border-gray-500 min1:border-opacity-40 items-center flex ${isOpen ? 'block' : 'max:hidden'}  border-2 h-9`}>
+                        <div className={` px-3 mr-3 rounded-full text-neonGreen max:border-gray-400 min1:border-gray-500 min1:border-opacity-40 items-center flex ${isOpen ? 'block' : 'max:hidden'}  border-2 h-9 flex-shrink`}>
                             <input type="text" name="" id="" className='outline-none border-none px-2 bg-transparent' />
                             <img src={searchIcon} alt="img" className='w-4 h-4 cursor-pointer mr-1' />
                         </div>

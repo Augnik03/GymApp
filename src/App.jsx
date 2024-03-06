@@ -3,14 +3,13 @@ import { useState } from 'react'
 // import viteLogo from '/vite.svg'
 import './index.css'
 import NavBar from './components/NavBar/NavBar.jsx'
-
+import Content1 from './components/NavBar/Content1.jsx'
 
 function App() {
-  // const [count, setCount] = useState(0)
-  const[theme,setTheme]= useState('light')
   return (
-    <div className={`container ${theme}`}>
-      <NavBar theme={theme} setTheme={setTheme}/> 
+    <div className='min-h-[3000px] min-w-screen bg-cover bg-gymImg bg-no-repeat'>
+      <NavBar/> 
+      <Content1/>
     </div>
     
    
