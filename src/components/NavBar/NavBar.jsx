@@ -15,7 +15,7 @@ function NavBar() {
     };
     
     return (
-        <div className='sticky top-0 p-3 '>
+        <div className='sticky top-0 p-3 z-10'>
             <nav className='min1:flex min1:justify-around min1:items-center backdrop-blur-md border-red-200 border-2 rounded-3xl border-opacity-20'>
 
 
