@@ -15,12 +15,12 @@ function NavBar() {
     };
     
     return (
-        <div className='sticky top-0'>
-            <nav className='min1:flex min1:justify-around min1:items-center backdrop-blur-md '>
+        <div className='sticky top-0 p-3 '>
+            <nav className='min1:flex min1:justify-around min1:items-center backdrop-blur-md border-red-200 border-2 rounded-3xl border-opacity-20'>
 
 
 
-                <div className='max:flex max:justify-between max:items-center '>
+                <div className='max:flex max:justify-between max:items-center'>
 
                     <a href="#" className=' rounded-full'>
                         <img src={logo} alt="logo" className=' w-28 mx-6 my-4 rounded-full p-2' />
@@ -62,7 +62,7 @@ function NavBar() {
 
 
 
-                    <div className='flex justify-center items-center max:pb-4'>
+                    <div className={`flex justify-center items-center ${isOpen ? 'max:py-2' : 'max:py-0'}`}>
                         <div className={` px-3 mr-3 rounded-full text-neonGreen max:border-gray-400 min1:border-gray-500 min1:border-opacity-40 items-center flex ${isOpen ? 'block' : 'max:hidden'}  border-2 h-9 flex-shrink`}>
                             <input type="text" name="" id="" className='outline-none border-none px-2 bg-transparent' />
                             <img src={searchIcon} alt="img" className='w-4 h-4 cursor-pointer mr-1' />
